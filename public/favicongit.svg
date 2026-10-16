@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Línea principal (main) -->
+  <line x1="30" y1="80" x2="30" y2="20" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  <!-- Línea de la rama (feature) -->
+  <path d="M 30 70 C 70 70, 70 50, 70 30" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Nodos (Commits) -->
+  <circle cx="30" cy="80" r="7" fill="#FFFFFF" />
+  <circle cx="30" cy="20" r="7" fill="#FFFFFF" />
+  <circle cx="70" cy="30" r="7" fill="#FFFFFF" />
+</svg>
