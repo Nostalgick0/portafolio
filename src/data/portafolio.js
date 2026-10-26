@@ -10,7 +10,7 @@ export const perfil = {
   saludo: "Hola, soy Gael",
   rol: "Desarrollador Fullstack",
   descripcion:
-    "Soy de la Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Escuinapa. Desarrollador enfocado en aplicaciones web. Me especializo en la lógica de backend y diseñar interfaces de usuario minimalistas.",
+    "Actualmente estudio la Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Escuinapa. Desarrollador enfocado en aplicaciones web y administración de bases de datos. Me especializo en la lógica de backend y diseñar interfaces de usuario minimalistas.",
   cv: "/cv.pdf",
   textoBotonCv: "Ver CV",
 };
@@ -44,7 +44,7 @@ export const educacion = [
     grado: "Técnico Superior Bachiller",
     escuela: "Conalep 121",
     periodo: "2020 - 2023",
-    descripcion: "Conocimiento básico para el desarrollo de software",
+    descripcion: "Fundamentos de programación.",
     estado: "Egresado"
   },
 ];
@@ -146,7 +146,7 @@ export const logros = [
     titulo: "Título de TSU",
     descripcion: "Título de Técnico Superior Universitario en Teconologías de la Información, Área Desarrollo de Software Múltiplataforma. Otorgado por la Universidad Tecnológica de Escuinapa.",
     fecha: "2025",
-    imagenes: ["/img/reconocimiento.jpeg"], // ej. ["/img/titulo-tsu.jpg"]
+    imagenes: ["/img/titulo.jpeg"], // ej. ["/img/titulo-tsu.jpg"]
     etiquetas: ["Título", "UTEsc"],
     enlace: "", // opcional
   },

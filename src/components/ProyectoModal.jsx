@@ -32,7 +32,7 @@ export default function ProyectoModal({ proyecto, onClose }) {
       aria-label={proyecto.titulo}
     >
       <div
-        className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl border border-white/10 bg-card"
+        className="relative flex h-[min(calc(100vh-2rem),52rem)] w-full max-w-6xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-card"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -44,9 +44,13 @@ export default function ProyectoModal({ proyecto, onClose }) {
         </button>
 
         {/* Carrusel */}
-        <div className="relative aspect-video bg-black">
+        <div className="relative min-h-0 flex-1 overflow-hidden bg-black">
           {imgs.length ? (
-            <img src={imgs[actual]} alt={`${proyecto.titulo} ${actual + 1}`} className="size-full object-contain" />
+            <>
+              {/* fondo difuminado: rellena los lados sin recortar la imagen */}
+              <img src={imgs[actual]} alt="" aria-hidden="true" className="absolute inset-0 size-full scale-110 object-cover opacity-60 blur-2xl" />
+              <img src={imgs[actual]} alt={`${proyecto.titulo} ${actual + 1}`} className="absolute inset-0 size-full object-contain" />
+            </>
           ) : (
             <div className="flex size-full items-center justify-center text-muted-foreground">
               <ImageIcon className="size-10" />
@@ -84,7 +88,7 @@ export default function ProyectoModal({ proyecto, onClose }) {
         </div>
 
         {/* Contenido */}
-        <div className="p-6">
+        <div className="max-h-[40vh] shrink-0 overflow-y-auto p-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex items-start justify-between gap-4">
             <h3 className="text-2xl font-semibold tracking-tight">{proyecto.titulo}</h3>
             {proyecto.fecha && <span className="font-mono text-xs text-muted-foreground">{proyecto.fecha}</span>}

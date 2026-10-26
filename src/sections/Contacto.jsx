@@ -8,22 +8,27 @@ const enlaceClase =
 
 export default function Contacto() {
   return (
-    <Seccion id="contacto" numero="05" titulo={secciones.contacto}>
-      <h2 className="text-3xl font-semibold tracking-tight">/ {secciones.contacto}</h2>
-      <p className="mt-4 max-w-md text-muted-foreground">{contacto.texto}</p>
-      <div className="mt-8 flex gap-4">
-        <a href={`mailto:${contacto.correo}`} aria-label="Correo" title={contacto.correo} className={enlaceClase}>
-          <Mail className="size-5" />
-        </a>
-        <a href={contacto.github} target="_blank" rel="noreferrer" aria-label="GitHub" className={enlaceClase}>
-          <GithubIcon className="size-5" />
-        </a>
-        <a href={contacto.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className={enlaceClase}>
-          <LinkedinIcon className="size-5" />
-        </a>
-      </div>
-      <p className="mt-12 text-center font-mono text-xs text-muted-foreground">Diseñado y desarrollado por {perfil.nombre}.</p>
-      <p className="text-center font-mono text-xs text-muted-foreground">Todos los derechos reservados. ©</p>
-    </Seccion>
+    <>
+      <Seccion id="contacto" numero="05" titulo={secciones.contacto}>
+        <h2 className="text-3xl font-semibold tracking-tight">/ {secciones.contacto}</h2>
+        <p className="mt-4 max-w-md text-muted-foreground">{contacto.texto}</p>
+        <div className="mt-8 flex gap-4">
+          <a href={`mailto:${contacto.correo}`} aria-label="Correo" title={contacto.correo} className={enlaceClase}>
+            <Mail className="size-5" />
+          </a>
+          <a href={contacto.github} target="_blank" rel="noreferrer" aria-label="GitHub" className={enlaceClase}>
+            <GithubIcon className="size-5" />
+          </a>
+          <a href={contacto.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className={enlaceClase}>
+            <LinkedinIcon className="size-5" />
+          </a>
+        </div>
+      </Seccion>
+
+      <footer className="px-6 pb-4 text-center font-mono text-xs text-muted-foreground">
+        <p>Diseñado y desarrollado por {perfil.nombre}.</p>
+        <p>Todos los derechos reservados. ©</p>
+      </footer>
+    </>
   )
 }
