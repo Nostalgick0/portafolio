@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react"
+import { Mail, FileText } from "lucide-react"
 import Seccion from "@/components/Seccion"
 import { GithubIcon, LinkedinIcon } from "@/components/Iconos"
 import { contacto, perfil, secciones } from "@/data/portafolio"
@@ -21,6 +21,9 @@ export default function Contacto() {
           </a>
           <a href={contacto.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className={enlaceClase}>
             <LinkedinIcon className="size-5" />
+          </a>
+            <a href={contacto.cv_footer} target="_blank" rel="noreferrer" aria-label="CV" className={enlaceClase}>
+            <FileText className="size-5" />
           </a>
         </div>
       </Seccion>

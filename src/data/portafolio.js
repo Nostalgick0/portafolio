@@ -10,7 +10,7 @@ export const perfil = {
   saludo: "Hola, soy Gael",
   rol: "Desarrollador full-stack",
   descripcion:
-    "Actualmente estudio la Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Escuinapa. Enfoque en desarrollo web y administración de bases de datos.\n\nMe especializo en la lógica de backend y diseñar interfaces de usuario minimalistas.",
+    "Actualmente estudio la Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Escuinapa. Tengo un enfoque en desarrollo web y administración de bases de datos. Me especializo en la lógica de backend y diseñar interfaces de usuario minimalistas.",
   cv: "/cv.pdf",
   textoBotonCv: "Ver CV",
   textoBotonDescarga: "Descargar CV",
@@ -81,7 +81,7 @@ export const software = [
 export const proyectos = [
   {
     titulo: "Sistema web Papelería Aracely",
-    descripcion: "Sistema de ventas, inventario y proveedores para una papelería de El Rosario, Sinaloa.",
+    descripcion: "Desarrollado con el fin de ptimizar el proceso de la gestión operativa: inventario, ventas, etc.",
     descripcionCompleta:
       "Sistema web full-stack para la administración de la Papelería Aracely.\n\nIncluye módulos de ventas, inventario, entradas de mercancía, proveedores y un dashboard con indicadores. Maneja ventas fraccionadas guardando el stock siempre en la unidad base más pequeña.\n\nFrontend en React + Vite, backend en Node.js con Express y base de datos MySQL. Trabajé en equipo con Git y GitHub.",
     fecha: "2026",
@@ -166,4 +166,5 @@ export const contacto = {
   correo: "al202300138tidsm@gmail.com",
   github: "https://github.com/Nostalgick0",
   linkedin: "https://www.linkedin.com/in/gael-enrique-nuñez-piña",
+  cv_footer: "/cv.pdf"
 };
