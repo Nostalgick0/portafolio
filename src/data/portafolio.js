@@ -8,11 +8,13 @@ export const perfil = {
   nombre: "Gael Enrique Nuñez Piña",
   nombreCorto: "Gael Nuñez",
   saludo: "Hola, soy Gael",
-  rol: "Desarrollador Fullstack",
+  rol: "Desarrollador full-stack",
   descripcion:
-    "Actualmente estudio la Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Escuinapa. Desarrollador enfocado en aplicaciones web y administración de bases de datos. Me especializo en la lógica de backend y diseñar interfaces de usuario minimalistas.",
+    "Actualmente estudio la Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Escuinapa. Enfoque en desarrollo web y administración de bases de datos.\n\nMe especializo en la lógica de backend y diseñar interfaces de usuario minimalistas.",
   cv: "/cv.pdf",
   textoBotonCv: "Ver CV",
+  textoBotonDescarga: "Descargar CV",
+  nombreArchivoCv: "CV_GAEL_ENRIQUE_NUÑEZ_PIÑA_2026.pdf", // nombre con el que se guarda al descargar
 };
 
 // Nombre de cada sección en el menú y en el título
@@ -21,7 +23,7 @@ export const secciones = {
   educacion: "Educación",
   software: "Software",
   proyectos: "Proyectos",
-  logros: "Logros", // <- cámbiale el nombre aquí
+  logros: "Logros",
   contacto: "Contáctame",
 };
 
@@ -81,25 +83,24 @@ export const proyectos = [
     titulo: "Sistema web Papelería Aracely",
     descripcion: "Sistema de ventas, inventario y proveedores para una papelería de El Rosario, Sinaloa.",
     descripcionCompleta:
-      "Sistema web full-stack para la administración de la Papelería Aracely.\n\nIncluye módulos de ventas, inventario, entradas de mercancía, proveedores y un dashboard con indicadores. Maneja ventas fraccionadas guardando el stock siempre en la unidad base más pequeña.\n\nFrontend en React con Vite y Ant Design; backend en Node.js con Express y base de datos MySQL. Trabajé en equipo con Git y GitHub.",
+      "Sistema web full-stack para la administración de la Papelería Aracely.\n\nIncluye módulos de ventas, inventario, entradas de mercancía, proveedores y un dashboard con indicadores. Maneja ventas fraccionadas guardando el stock siempre en la unidad base más pequeña.\n\nFrontend en React + Vite, backend en Node.js con Express y base de datos MySQL. Trabajé en equipo con Git y GitHub.",
     fecha: "2026",
     imagenes: ["/img/papeleria/p1.png", "/img/papeleria/p2.png", "/img/papeleria/p3.png", "/img/papeleria/p4.png", "/img/papeleria/p5.png"], // ej. ["/img/aracely-1.png", "/img/aracely-2.png"]
     etiquetas: ["React", "Node.js", "Express.js", "MySQL"],
     enlace: "", // opcional: repositorio o demo
   },
   {
-    titulo: "Quizz Storm",
-    descripcion: "Juego de cuestionarios con background dinámico.",
+    titulo: "QuizStorm",
+    descripcion: "Juego de cuestionarios con fondo dinámico con base en las respuestas del usuario.",
     descripcionCompleta:
-      "Sistema de punto de venta pensado para un negocio que vende ropa y accesorios deportivos en estadios y por WhatsApp.\n\nResuelve el principal problema del negocio: consultar existencias y tallas sin ir al almacén. Incluye catálogo con categorías y variantes, entradas de mercancía, ventas y comprobantes, además de alerta de stock bajo.\n\nDiseñado en Figma y desarrollado con React, Vite, Express y MySQL.",
-    fecha: "2026",
+      "Juego de cuestionarios para el aprendizaje con fondo dinámico con base en las respuestas del usuario.",
     imagenes: ["/img/quizz/q1.png", "/img/quizz/q2.png", "/img/quizz/q3.png", "/img/quizz/q4.png", "/img/quizz/q5.png", "/img/quizz/q6.png", "/img/quizz/q7.png", "/img/quizz/q8.png", "/img/quizz/q9.png", "/img/quizz/q10.png",],
     etiquetas: ["HTML", "CSS", "JavaScript", "MySQL", "Google Recaptcha"],
     enlace: "",
   },
   {
-    titulo: "Sistema de control escolar",
-    descripcion: "Gestión de grupos, profesores, alumnos, ciclos escolares, etc.",
+    titulo: "Sistema de control escolar Colegio El Molino",
+    descripcion: "Sistema de gestión de grupos, profesores, alumnos, ciclos escolares, y demás.",
     descripcionCompleta:
       "Sistema de gestión de agenda para las taquizas de la Taquería Los Compadres.\n\nPermite registrar cada evento con su tipo, descripción, datos de contacto, fecha y anticipo, y dar seguimiento a abonos hasta la liquidación. Al hacer clic en una cita del calendario se abre el detalle de la taquiza.",
     fecha: "2026",
@@ -109,7 +110,7 @@ export const proyectos = [
   },
   {
     titulo: "Sistema de gestión de citas para un consultorio médico",
-    descripcion: "Agenda de citas de pacientes.",
+    descripcion: "Gestión de personal, pacientes, citas, y pagos.",
     descripcionCompleta:
       "Proyecto de análisis de datos en JupyterLab con estadísticas de juegos de la NBA entre 2011 y 2020.\n\nPlantea la hipótesis de un cambio en la frecuencia de tiros antes y después de 2016, y la contrasta con gráficas y tablas.\n\nHerramientas: Python, Pandas, NumPy y Matplotlib.",
     fecha: "2026",
@@ -129,7 +130,7 @@ export const proyectos = [
   },
   {
     titulo: "Portafolio de actividades de la materia Estructuras de Datos Aplicadas",
-    descripcion: "Ejercicios de recursividad, selectividad, y demás.",
+    descripcion: "Ejercicios de recursividad, selectividad, y miscelaneos.",
     descripcionCompleta:
       "Proyecto de análisis de datos en JupyterLab con estadísticas de juegos de la NBA entre 2011 y 2020.\n\nPlantea la hipótesis de un cambio en la frecuencia de tiros antes y después de 2016, y la contrasta con gráficas y tablas.\n\nHerramientas: Python, Pandas, NumPy y Matplotlib.",
     fecha: "2024",

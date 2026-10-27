@@ -25,14 +25,14 @@ export default function ProyectoModal({ proyecto, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/70 p-3 backdrop-blur-sm md:p-4"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-label={proyecto.titulo}
     >
       <div
-        className="relative flex h-[min(calc(100vh-2rem),52rem)] w-full max-w-6xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-card"
+        className="relative flex h-[min(calc(100dvh-1.5rem),52rem)] md:h-[min(calc(100dvh-2rem),52rem)] w-full max-w-6xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-card"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -44,7 +44,7 @@ export default function ProyectoModal({ proyecto, onClose }) {
         </button>
 
         {/* Carrusel */}
-        <div className="relative min-h-0 flex-1 overflow-hidden bg-black">
+        <div className="relative h-[40%] shrink-0 overflow-hidden bg-black md:h-auto md:min-h-0 md:flex-1">
           {imgs.length ? (
             <>
               {/* fondo difuminado: rellena los lados sin recortar la imagen */}
@@ -73,7 +73,7 @@ export default function ProyectoModal({ proyecto, onClose }) {
               >
                 <ChevronRight className="size-5" />
               </button>
-              <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
+              <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-black/60 px-2.5 py-2 backdrop-blur-sm">
                 {imgs.map((_, i) => (
                   <button
                     key={i}
@@ -88,7 +88,7 @@ export default function ProyectoModal({ proyecto, onClose }) {
         </div>
 
         {/* Contenido */}
-        <div className="max-h-[40vh] shrink-0 overflow-y-auto p-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-5 [scrollbar-width:none] md:max-h-[40vh] md:flex-none md:shrink-0 [&::-webkit-scrollbar]:hidden">
           <div className="flex items-start justify-between gap-4">
             <h3 className="text-2xl font-semibold tracking-tight">{proyecto.titulo}</h3>
             {proyecto.fecha && <span className="font-mono text-xs text-muted-foreground">{proyecto.fecha}</span>}

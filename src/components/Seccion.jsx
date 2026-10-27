@@ -1,3 +1,5 @@
+import Reveal from "@/components/Reveal"
+
 export default function Seccion({ id, numero, titulo, completa = false, children }) {
   return (
     <section
@@ -7,7 +9,8 @@ export default function Seccion({ id, numero, titulo, completa = false, children
       <div className="mx-auto w-full max-w-6xl">
         <p className="mb-2 font-mono text-xs tracking-widest text-muted-foreground uppercase">
         </p>
-        {children}
+        {/* El hero (completa) escalona sus propios elementos */}
+        {completa ? children : <Reveal>{children}</Reveal>}
       </div>
     </section>
   )

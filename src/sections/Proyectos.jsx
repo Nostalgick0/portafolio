@@ -3,6 +3,7 @@ import { Image as ImageIcon } from "lucide-react"
 import Seccion from "@/components/Seccion"
 import ProyectoModal from "@/components/ProyectoModal"
 import { proyectos, secciones } from "@/data/portafolio"
+import { createPortal } from "react-dom"
 
 function Tarjeta({ item, onAbrir }) {
   const portada = item.imagenes?.[0]
@@ -47,7 +48,6 @@ export default function Proyectos() {
           <Tarjeta key={p.titulo} item={p} onAbrir={() => setAbierto(p)} />
         ))}
       </div>
-      {abierto && <ProyectoModal proyecto={abierto} onClose={() => setAbierto(null)} />}
-    </Seccion>
+      {abierto && createPortal(<ProyectoModal proyecto={abierto} onClose={() => setAbierto(null)} />, document.body)}    </Seccion>
   )
 }
